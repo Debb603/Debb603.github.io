@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Deborah Peter Monday | Cybersecurity Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #050b14;
+            color: #ffffff;
+        }
+
+        /* NAVIGATION */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 22px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(5, 11, 20, 0.92);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid #172638;
+        }
+
+        .logo {
+            color: #38bdf8;
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* HOME */
+        .hero {
+            min-height: 100vh;
+            padding: 130px 8% 70px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 70px;
+
+            background:
+                radial-gradient(
+                    circle at 80% 50%,
+                    rgba(56, 189, 248, 0.12),
+                    transparent 35%
+                ),
+                #050b14;
+        }
+
+        .hero-text {
+            max-width: 650px;
+        }
+
+        .intro {
+            color: #38bdf8;
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 {
+            font-size: clamp(45px, 6vw, 78px);
+            line-height: 1.05;
+            margin-bottom: 20px;
+        }
+
+        .hero h2 {
+            color: #94a3b8;
+            font-size: 24px;
+            font-weight: normal;
+            margin-bottom: 25px;
+        }
+
+        .hero-description {
+            color: #cbd5e1;
+            font-size: 17px;
+            line-height: 1.8;
+            max-width: 590px;
+            margin-bottom: 35px;
+        }
+
+        /* BUTTONS */
+        .hero-buttons {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .primary-btn {
+            background: #38bdf8;
+            color: #03111d;
+        }
+
+        .primary-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(56, 189, 248, 0.25);
+        }
+
+        .secondary-btn {
+            border: 1px solid #38bdf8;
+            color: #38bdf8;
+        }
+
+        .secondary-btn:hover {
+            background: #38bdf8;
+            color: #03111d;
+        }
+
+        /* PROFILE IMAGE */
+        .hero-image {
+            width: 390px;
+            min-width: 320px;
+            position: relative;
+        }
+
+        .hero-image::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 1px solid #38bdf8;
+            top: 18px;
+            left: 18px;
+            border-radius: 12px;
+            z-index: 0;
+        }
+
+        .hero-image img {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            display: block;
+            border-radius: 12px;
+            border: 2px solid #38bdf8;
+            object-fit: cover;
+        }
+
+/* MOBILE */
+        @media (max-width: 850px) {
+
+            nav {
+                padding: 18px 5%;
+            }
+
+            nav ul {
+                gap: 12px;
+            }
+
+            nav a {
+                font-size: 12px;
+            }
+
+            .hero {
+                padding: 120px 7% 70px;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text {
+                order: 2;
+            }
+
+            .hero-image {
+                order: 1;
+                width: min(340px, 85vw);
+            }
+
+            .hero-description {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 45px;
+            }
+
+            .hero h2 {
+                font-size: 19px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">Deborah Peter Monday</div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- HOME / COVER -->
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+
+            <p class="intro">CYBERSECURITY PROFESSIONAL</p>
+
+            <h1>
+                Deborah<br>
+                Peter Monday
+            </h1>
+
+            <h2>
+                Cybersecurity • SOC • Security Operations
+            </h2>
+
+            <p class="hero-description">
+                Cybersecurity professional with hands-on experience in
+                security monitoring, threat detection, network security,
+                penetration testing, incident investigation and security
+                analysis.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn primary-btn">
+                    View My Projects
+                </a>
+
+                <a href="#contact" class="btn secondary-btn">
+                    Contact Me
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <img
+                src="profile.jpg"
+                alt="Deborah Peter Monday - Cybersecurity Professional"
+            >
+
+        </div>
+
+    </section>
+
+</body>
+</html>
