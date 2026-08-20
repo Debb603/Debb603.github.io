@@ -517,6 +517,65 @@
     font-size: 16px;
     font-weight: 500;
 }
+        /* CONTACT SECTION */
+
+.contact-section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+}
+
+.contact-text {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 280px;
+    padding: 20px;
+    text-decoration: none;
+    border: 1px solid rgba(0, 180, 255, 0.35);
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+    border-color: #00bfff;
+}
+
+.contact-item span {
+    font-size: 25px;
+}
+
+.contact-item div {
+    text-align: left;
+}
+
+.contact-item strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-item p {
+    margin: 0;
+    font-size: 14px;
+}
     </style>
 </head>
 
@@ -1059,6 +1118,47 @@
 
     </div>
 
+</section>
+
+    <!-- CONTACT SECTION -->
+<section id="contact" class="contact-section">
+    <p class="section-label">CONTACT</p>
+
+    <h2>Let's Connect</h2>
+
+    <p class="contact-text">
+        I’m open to cybersecurity opportunities, internships,
+        entry-level roles, and professional collaborations.
+        Feel free to reach out.
+    </p>
+
+    <div class="contact-links">
+        <a href="mailto:peterdebby189@gmail.com" class="contact-item">
+            <span>📧</span>
+            <div>
+                <strong>Email</strong>
+                <p>peterdebby189@gmail.com</p>
+            </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/deborah-monday-8a87003b7"
+           target="_blank" class="contact-item">
+            <span>💼</span>
+            <div>
+                <strong>LinkedIn</strong>
+                <p>Connect with me on LinkedIn</p>
+            </div>
+        </a>
+
+        <a href="https://github.com/Debb603/Debb603.github.io" 
+           target="_blank" class="contact-item">
+            <span>💻</span>
+            <div>
+                <strong>GitHub</strong>
+                <p>View my cybersecurity projects</p>
+            </div>
+        </a>
+    </div>
 </section>
 </body>
 </html>
