@@ -484,6 +484,39 @@
     display: block;
     border-radius: 10px;
 }
+        /* TOOLS & TECHNOLOGIES */
+.tools-section {
+    padding: 60px 20px;
+}
+
+.tools-section h2 {
+    margin-bottom: 30px;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.tool-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 18px;
+    border-radius: 12px;
+}
+
+.tool-item img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.tool-item span {
+    font-size: 16px;
+    font-weight: 500;
+}
     </style>
 </head>
 
@@ -958,6 +991,74 @@
 </div>
 </div>
         </div>
+</section>
+
+    <!-- TOOLS & TECHNOLOGIES -->
+<section id="tools" class="tools-section">
+
+    <p class="section-label">TOOLS & TECHNOLOGIES</p>
+
+    <h2>Cybersecurity Tools</h2>
+
+    <div class="tools-grid">
+
+        <div class="tool-item">
+            <img src="wazuh-logo.png" alt="Wazuh">
+            <span>Wazuh</span>
+        </div>
+
+        <div class="tool-item">
+            <img src="wireshark-logo.png" alt="Wireshark">
+            <span>Wireshark</span>
+        </div>
+
+        <div class="tool-item">
+            <img src="nmap-logo.png" alt="Nmap">
+            <span>Nmap</span>
+        </div>
+
+        <div class="tool-item">
+            <img src="netexec-logo.png" alt="NetExec">
+            <span>NetExec</span>
+        </div>
+
+        <div class="tool-item">
+            <img src="kerbrute-logo.png" alt="Kerbrute">
+            <span>Kerbrute</span>
+        </div>
+
+        <div class="tool-item">
+            <img src="metasploit-logo.png" alt="Metasploit">
+            <span>Metasploit</span>
+        </div>
+
+        <div class="tool-item">
+            <img src="burp-suite-logo.png" alt="Burp Suite">
+            <span>Burp Suite</span>
+        </div>
+
+        <div class="tool-item">
+            <img src="sqlmap-logo.png" alt="SQLMap">
+            <span>SQLMap</span>
+        </div>
+
+        <div class="tool-item">
+            <img src="kali-logo.png" alt="Kali Linux">
+            <span>Kali Linux</span>
+        </div>
+
+        <div class="tool-item">
+            <img src="ad-username-logo.png" alt="Active Directory Username Enumeration">
+            <span>AD Username Enumeration</span>
+        </div>
+
+        <div class="tool-item">
+            <img src="cisco-logo.png" alt="Cisco Packet Tracer">
+            <span>Cisco Packet Tracer</span>
+        </div>
+
+    </div>
+
 </section>
 </body>
 </html>
